@@ -1,18 +1,33 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
+h1{
+    margin: -80vmin 0 0 20vmin;
+}
 body{
     height:100vh;
-    margin: 0;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color:rgba(255,100,20);
+}
+div{
+    justify-items: center;
+    text-align:center;
+    font-size:100px;
+}
+button{
+    background-color:black;
+    color:red;
+    font-size:10vmin;
 }
 section.board{
     display: grid;
-    grid-template-columns: repeat(3,10vmin);
-    grid-template-rows: repeat(3,10vmin);
+    justify-content: center;
+    grid-template-columns: repeat(3,20vmin);
+    grid-template-rows: repeat(3,20vmin);
 }
 section.board div{
-    border: 1px solid red;
+    border: 2px solid black;
 }
